@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para evitar problemas de borda e padding em elementos */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Fundo leve para todo o site */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://noticiasconcursos.com.br/wp-content/uploads/2022/01/noticiasconcursos.com.br-banco-inter-conta-voltada-para-criancas-atinge-1-milhao-de-clientes-confira-como-abrir-a-sua-bancointer-oficial.png");
+    background-size: cover;
+}
+
+.div-geral {
+    background-color: #df7823; /* Cor de fundo mais suave */
+    width: 500px;
+    padding: 40px 30px;
+    border-radius: 10px; /* Bordas arredondadas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o bloco */
+}
+
+.titulo {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.div-saldo {
+    background-color: #ffffff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.receita-despesa {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.receita, .despesas {
+    height: 120px;
+    width: 48%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.receita {
+    background-color: #4CAF50; /* Cor verde para receitas */
+}
+
+.despesas {
+    background-color: #F44336; /* Cor vermelha para despesas */
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.input-descricao, .input-valor {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.input-descricao:focus, .input-valor:focus {
+    border-color: #4B87BB; /* Cor de borda ao focar no campo */
+    outline: none;
+}
+
+.tipo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.tipo input {
+    margin-right: 5px;
+}
+
+.tipo label {
+    font-size: 16px;
+    color: #333;
+}
+
+.button-enviar {
+    padding: 12px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-enviar:hover {
+    background-color: #555; /* Cor mais escura no hover */
+}
+
+.linha {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+margin-top: 40px;
+}

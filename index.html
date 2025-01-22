@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita e Despesas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="div-geral">
+        <h1 class="titulo">Receita e Despesas</h1>
+        <div class="div-saldo">
+            Saldo R$ <span id="saldo">0</span>
+        </div>
+        <div class="receita-despesa">
+            <div class="receita">
+                <h2>Receita</h2>
+                <h3>R$ <span id="total-receita">0</span></h3>
+            </div>
+            <div class="despesas">
+                <h2>Despesas</h2>
+                <h3>R$ <span id="total-despesas">0</span></h3>
+            </div>
+        </div>
+        <h3>DESCRIÇÃO</h3>
+        <div>
+            <input class="input-descricao" type="text" id="descricao" placeholder="INFORME A DESCRIÇÃO"  maxlength="50">
+        </div>
+        <h3>VALOR</h3>
+        <div>
+            <input class="input-valor" type="number" id="valor" placeholder="INFORME O VALOR"  maxlength="50">
+        </div>
+        <h3>TIPO</h3>
+        <div class="tipo">
+            <input type="radio" id="Receita" name="tipo" value="receita">
+            <label for="Receita">Receita</label>
+            <input type="radio" id="Despesas" name="tipo" value="despesa">
+            <label for="Despesas">Despesas</label>
+        </div>
+        <div class="linha"></div>
+        <button class="button-enviar" onclick="adicionarTarefa()">Enviar</button>
+        <div class="linha"></div>
+        <h1>LISTA DESCRIÇÃO</h1>
+        <ul>
+            
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
